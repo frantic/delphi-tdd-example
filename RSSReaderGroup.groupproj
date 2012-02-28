@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{90B62C2B-B789-4181-AD5C-D3B77F5C4077}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="RSSReader.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="RSSReaderTests.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="RSSReader">
+			<MSBuild Projects="RSSReader.dproj"/>
+		</Target>
+		<Target Name="RSSReader:Clean">
+			<MSBuild Targets="Clean" Projects="RSSReader.dproj"/>
+		</Target>
+		<Target Name="RSSReader:Make">
+			<MSBuild Targets="Make" Projects="RSSReader.dproj"/>
+		</Target>
+		<Target Name="RSSReaderTests">
+			<MSBuild Projects="RSSReaderTests.dproj"/>
+		</Target>
+		<Target Name="RSSReaderTests:Clean">
+			<MSBuild Targets="Clean" Projects="RSSReaderTests.dproj"/>
+		</Target>
+		<Target Name="RSSReaderTests:Make">
+			<MSBuild Targets="Make" Projects="RSSReaderTests.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="RSSReader;RSSReaderTests"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="RSSReader:Clean;RSSReaderTests:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="RSSReader:Make;RSSReaderTests:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>
