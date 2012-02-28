@@ -18,7 +18,8 @@ uses
   Forms,
   TestFramework,
   GUITestRunner,
-  TextTestRunner;
+  TextTestRunner,
+  TestHttpClient in 'test\TestHttpClient.pas';
 
 {$R *.RES}
 

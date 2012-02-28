@@ -2,7 +2,8 @@ program RSSReader;
 
 uses
   Forms,
-  Unit1 in 'src\Unit1.pas' {Form1};
+  Unit1 in 'src\Unit1.pas' {Form1},
+  HttpClient in 'src\HttpClient.pas';
 
 {$R *.res}
 

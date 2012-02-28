@@ -47,6 +47,7 @@
 			<DelphiCompile Include="RSSReaderTests.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
+			<DCCReference Include="test\TestHttpClient.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>

@@ -49,6 +49,7 @@
 			<DCCReference Include="src\Unit1.pas">
 				<Form>Form1</Form>
 			</DCCReference>
+			<DCCReference Include="src\HttpClient.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
