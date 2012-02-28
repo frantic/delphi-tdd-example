@@ -20,7 +20,8 @@ uses
   GUITestRunner,
   TextTestRunner,
   TestHttpClient in 'test\TestHttpClient.pas',
-  TestRSSParser in 'test\TestRSSParser.pas';
+  TestRSSParser in 'test\TestRSSParser.pas',
+  TestRSSFeedModel in 'test\TestRSSFeedModel.pas';
 
 {$R *.RES}
 
