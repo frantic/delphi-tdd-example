@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Delphi Zen</title>
+	<atom:link href="http://delphi.frantic.im/feed/" rel="self" type="application/rss+xml" />
+	<link>http://delphi.frantic.im</link>
+	<description>Food for thoughts</description>
+	<lastBuildDate>Sat, 25 Feb 2012 15:30:18 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Используете ли вы Unit-testing/TDD при разработке проектов на Delphi?</title>
+		<link>http://delphi.frantic.im/do-you-use-td/</link>
+		<comments>http://delphi.frantic.im/do-you-use-td/#comments</comments>
+		<pubDate>Sat, 25 Feb 2012 15:30:18 +0000</pubDate>
+		<dc:creator>Frantic</dc:creator>
+				<category><![CDATA[Delphi]]></category>
+		<category><![CDATA[TDD]]></category>
+
+		<guid isPermaLink="false">http://delphi.frantic.im/?p=82</guid>
+		<description><![CDATA[Хочу провести небольшой опрос: какой процент Delphi-сообщества пользуется юнит-тестированием? Если у Вас есть друзья Delphi-разработчики, которые не читают delphifeeds.ru, попросите их проголосовать! :) Если нет, почему? Вот уже неделю готовлю статью на эту тему, интересно как дела обстоят на практике. Пожелания оставляйте в комментариях. Спасибо!]]></description>
+			<content:encoded><![CDATA[<p>Хочу провести небольшой опрос: какой процент Delphi-сообщества пользуется юнит-тестированием? Если у Вас есть друзья Delphi-разработчики, которые не читают delphifeeds.ru, попросите их проголосовать! :)</p>
+Note: There is a poll embedded within this post, please visit the site to participate in this post's poll.
+<p>Если нет, почему? Вот уже неделю готовлю статью на эту тему, интересно как дела обстоят на практике. Пожелания оставляйте в комментариях. Спасибо!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://delphi.frantic.im/do-you-use-td/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>10 причин перестать программировать на Delphi</title>
+		<link>http://delphi.frantic.im/10-reasons-to-abandon-delphi/</link>
+		<comments>http://delphi.frantic.im/10-reasons-to-abandon-delphi/#comments</comments>
+		<pubDate>Mon, 30 Jan 2012 15:14:06 +0000</pubDate>
+		<dc:creator>Frantic</dc:creator>
+				<category><![CDATA[Без категории]]></category>
+
+		<guid isPermaLink="false">http://delphi.frantic.im/?p=71</guid>
+		<description><![CDATA[Мне очень нравится Delphi и я не призываю вас бросать работу. Просто мысли, в случайном порядке: Delphi на несколько лет отстает от других технологий. Да, Embarcadero развивают свой продукт, но ведь их конкуренты тоже! По версии TIOBE не похоже, что популярность языка активно возрастает. Исходя из опросов (а также банального пролистывания вакансий), Delphi-разработчикам платят меньше, нежели [...]]]></description>
+			<content:encoded><![CDATA[<div>Мне очень нравится Delphi и я не призываю вас бросать работу. Просто мысли, в случайном порядке:</div>
+<ol>
+<li>Delphi на несколько лет <strong>отстает</strong> от других технологий. Да, Embarcadero развивают свой продукт, но ведь их конкуренты тоже! По версии <a href="http://www.tiobe.com/index.php/paperinfo/tpci/Delphi_Object_Pascal.html">TIOBE</a> не похоже, что популярность языка активно возрастает.</li>
+<li>Исходя из <a href="http://dou.ua/lenta/articles/developers-salaries-december-2011/">опросов</a> (а также банального пролистывания вакансий), Delphi-разработчикам <strong>платят меньше</strong>, нежели специалистам по другим технологиям с тем же опытом.</li>
+<li><strong>Стереотип</strong>, что Delphi (и PHP) разработчики &#8211; ничего не умеющие школьники. Возможно, виной всему легендарные темы на форумах («как написать вирус на делфи срочно!!!!», «памагите с алгоритмом сортировки» и т.д.).</li>
+<li>Процесс разработки приложений с использованием VCL подталкивает жестко связать UI и логику, в итоге получается такой себе монолит, который <strong>тяжело сопровождать</strong>. Даже если Вы достаточно опытны, чтобы этого не сделать, никто не застрахован от получения legacy-приложения на доработку.</li>
+<li>RAD Studio &#8211; не слишком удобная IDE, а Delphi &#8211; не самый интересный и гибкий ЯП . Конечно, тем кто не «пробовал» других сред разработки приложений (которые намного тесней интегрируются с языком и технологиями и предоставляют на порядок больше возможностей) и не писал на чем-то вроде Ruby или Haskell этот аргумент может показаться несправедливым.</li>
+<li>Выйти из <strong>зоны комфорта</strong> и бороться со своей <strong>привязанностью</strong> к языку, платформе и технологии.</li>
+<li>Учить <strong>новые языки программирования и технологии</strong>, ведь мир не стоит на месте, а информационный мир развивается экспоненциально. Чтобы оставаться хорошим специалистом необходимо постоянно чему-то учиться (надеюсь, у вас в памяти остались воспоминания о том, как вы изучали свой первый ЯП, как радовались что программа <a href="http://xkcd.com/303/">компилируется</a>, как хотелось изучать и познавать новое?)</li>
+<li>Desktop-приложения постепенно уходят, а современный web с <strong>HTML5</strong> идет ему на замену. <strong>Delphi не готов</strong> к этому.</li>
+<li>Delphi-разработчики не проводят веселых и интересных конференций.</li>
+<li>Забросить работу в ІТ, кардинально сменить жизнь и заняться любимым делом (если Вы программист только ради денег, money-driven-developer).</li>
+</ol>
+<p>Что думаете по этому поводу?</p>
+<p>Кстати, легендарный <a href="http://www.isdelphidead.com/">http://www.isdelphidead.com/</a> что-то не открывается :) К чему бы это?</p>
+]]></content:encoded>
+			<wfw:commentRss>http://delphi.frantic.im/10-reasons-to-abandon-delphi/feed/</wfw:commentRss>
+		<slash:comments>19</slash:comments>
+		</item>
+		<item>
+		<title>Из Delphi в FreePascal под Mac OSX</title>
+		<link>http://delphi.frantic.im/delphi-to-freepascal-on-mac-osx/</link>
+		<comments>http://delphi.frantic.im/delphi-to-freepascal-on-mac-osx/#comments</comments>
+		<pubDate>Fri, 13 Jan 2012 23:41:09 +0000</pubDate>
+		<dc:creator>Frantic</dc:creator>
+				<category><![CDATA[Delphi]]></category>
+		<category><![CDATA[Lazarus]]></category>
+
+		<guid isPermaLink="false">http://delphi.frantic.im/?p=50</guid>
+		<description><![CDATA[Уже больше года прошло с того момента, как заказчик попросил меня сделать &#8220;то же самое, только под мак&#8221;. Хочу рассказать о своем опыте портирования с Delphi/Windows на Lazarus/MacOS. (Я надеюсь все знают что такое Lazarus/FreePascal) Но сначала немного о самом приложении: оно предназначено для безопасной и быстрой передачи файлов через интернет. Сам того не осознавая, [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://delphi.frantic.im/wp-content/uploads/2012/01/Screen-Shot-2012-01-13-at-10.28.07-PM.png"><img class="alignleft size-full wp-image-51" title="Lazarus icon in Dock" src="http://delphi.frantic.im/wp-content/uploads/2012/01/Screen-Shot-2012-01-13-at-10.28.07-PM.png" alt="" width="175" height="79" /></a>Уже больше года прошло с того момента, как заказчик попросил меня сделать &#8220;то же самое, только под мак&#8221;. Хочу рассказать о своем опыте портирования с Delphi/Windows на Lazarus/MacOS.</p>
+<p>(Я надеюсь все знают что такое <a href="http://www.lazarus.freepascal.org/" target="_blank">Lazarus</a>/FreePascal)</p>
+<p>Но сначала немного о самом приложении: оно предназначено для безопасной и быстрой передачи файлов через интернет. Сам того не осознавая, в начале работы над ним я принял несколько решений, которые в итоге сильно упростили процесс переноса на другую платформу:</p>
+<p><span id="more-50"></span></p>
+<ol>
+<li>Четко разделил приложения на части, каждая из которых имела свой <strong>максимально простой</strong> интерфейс (IInterface) и одну реализацию (пример далее).</li>
+<li>Ограничил использование сторонних компонентов, а те, которые использовались, выделил в отдельные интерфейсы по принципу №1.</li>
+<li>Использовал DUnit для тестирования реализации основных компонентов.</li>
+</ol>
+<div>Поигравшись с Lazarus на Mac, я понял что графическую часть приложения я буду писать на родном для OSX ObjectiveC/Cocoa, а всю логику подключу через Dylib (аналог DLL). А все из-за того, что формочки в Lazarus хоть и есть, но выглядят они очень убого (там старый Carbon widgetset, который навсегда останется 32-битным) + хочется теснее интегрироваться в систему, а абстрагированный от платформы код FreePascal этого не позволит в полной мере (нет, позволит, конечно, но с огромным количеством костылей)</div>
+<h3>Лирическое отступление №1.</h3>
+<p>Мыслить в терминах интерфейсов &#8211; очень удобно. Вот, к примеру, у меня был интерфейс, инкапсулирующий работу с HTTP:</p>
+<pre class="brush:delpi">type
+  IHttpClient = interface
+    ['{CBE784BC-8732-4CE0-868F-00AE659F11AA}']
+    procedure Post(URL: string; PostData, ResultData: TStrings);
+  end;
+var
+  HttpClient: IHttpClient = nil;</pre>
+<p>Здесь 2 важных пункта: во-первых, интерфейс максимально простой; во-вторых, регистрация реализации интерфейса делается вот так:</p>
+<pre class="brush:delpi">HttpClient := TIndyHttpClient.Create;</pre>
+<p>Очень просто. Никаких сверх-сложных репозиториев реализаций, сервисов автоматического поиска зависимостей или XML-файлов. Все присвоения интерфейс := реализация в одном отдельном файле. Так, в юнит-тестах вместо реального TIndyHttpClient можно использовать TFakeHttpClient. Забегая наперед: реализацию интерфейса, которая не сомгла быть портирована на FreePascal, очень легко заменить на другую (например вместо TIndyHttpClient в Mac-версии используется TSynapseHttpClient).</p>
+<h3>Lazarus &amp; FreePascal on Mac</h3>
+<p>Перед установкой надо иметь в системе XCode, на момент написания сего текста у меня 4.2. Тем, кто собирается использовать старый XCode 3 &#8211; обязательно прочтите <a href="http://www.freepascal.org/down/i386/macosx-ftp.freepascal.org.var">это</a>. Установка очень проста &#8211; согласно <a href="http://wiki.lazarus.freepascal.org/Installing_Lazarus_on_MacOS_X">инструкции</a> качаем с <a href="http://sourceforge.net/projects/lazarus/files/">sourceforge</a> 3 DMG-образа и устанавливаем их в таком порядке: fpc, fpcsrc, lazarus. После этого Lazarus.app можно найти по адресу /Developer/lazarus/. Я понимаю, что создание такого IDE, как Lazarus, требует много сил, но пока что тяжело назвать его удобным.</p>
+<h3>Dylib</h3>
+<p>Dylib &#8211; это аналог Windows DLL. Создать такой в Lazarus очень просто: File &#8211; New &#8211; Library. В своем коде я выделил API для доступа к основному функционалу приложения. Эти функции следует объявлять с директивой <strong>cdecl</strong> и потом указвать их в секции <strong>exports</strong> *.lpr-файла:</p>
+<pre class="brush:delpi">function magic_sum(a, b: Integer): Integer; cdecl;
+begin
+  Result := a + b + 42;
+end;
+
+exports
+  magic_sum;</pre>
+<p>Такой способ организации мне понравился &#8211; он заставляет окончательно отделить центральную логику работы приложения от представления и оформить API для доступа к ней.</p>
+<p>FreePascal иммеет свои <a href="http://wiki.freepascal.org/Code_Conversion_Guide">отличия</a> от Delphi, но в целом где-то 90% кода осталось без изменений. Indy был заменен на <a href="http://www.ararat.cz/synapse/doku.php/start">Synapse</a>, <a href="http://sourceforge.net/projects/tplockbox/">LockBox</a> пришлось немного подправить, <a href="http://www.progdigy.com/?page_id=6">SuperObject</a> чудесно скомпилировался. Generics.Collections и новомодные reference to procedure пришлось переписать, FPC их не поддерживает (точнее поддерживает, но синтаксис <a href="http://wiki.freepascal.org/Generics">отличается</a>).</p>
+<p>Из важных особенностей могу отметить три, которые в свое время отобрали у меня кучу времени:</p>
+<ol>
+<li>Если в dylib используется работа с потоками - cthreads должен стоять первым в uses</li>
+<li>В старом XCode 3.2 был баг в линкере, который приводил к тому, что секции initialization в юнитах не исполнялись. <a href="http://www.freepascal.org/down/i386/macosx-ftp.freepascal.org.var">Здесь</a> (и <a href="http://www.lazarus.freepascal.org/index.php/topic,11726.0.html">здесь</a>) написано как это исправить.</li>
+<li>Код Cocoa напичкан кучей floating point exception, которые не вываливаются потому что по-умолчанию все FP исключения игнорируются. А вот runtime FreePascal включает их, итого программа становится нестабильной. <a href="http://community.freepascal.org:10000/bboards/message?message_id=674760&amp;forum_id=24100">Лечится</a> это вызовом в самом начале библиотеки (модуль math):</li>
+</ol>
+<div>
+<pre style="padding-left: 60px;">SetExceptionMask([exInvalidOp, exDenormalized, exZeroDivide,
+ exOverflow, exUnderflow, exPrecision]);</pre>
+</div>
+<h3>UI часть</h3>
+<p>Как упоминалось выше, от UI части на Lazarus я отказался, реализовав ее как Cocoa Application в XCode. Изучение Objective-C и Interface Builder не слишком простое для человека несколько лет работавшего с Delphi, ибо подходы совершенно разные. Единственное, что хочу отметить &#8211; все эти &#8220;плюсики&#8221; и &#8220;скобочки&#8221; в Objective-C кажутся бредовыми только на первых порах, надо копнуть глубже что бы полюбить этот язык и технологию.</p>
+<p>Для доступа к функциям с dylib есть 2 способа: 1) через dlopen и ее друзья &#8211; функции нижнего уровня, 2) отдать эту работу linker-у. Я выбрал второй: drag&amp;drop&#8217;ом добавил dylib в проект, а в отдельном header-e описал импортированные функции:</p>
+<pre>int magic_sum(int a, int b);</pre>
+<p>Обмен строками &#8211; через буферы const char*/PChar.</p>
+<p>Если используете callback-функции (а никто не запрещает передать в dylib указатель на функцию и вызвать ее) и потоки &#8211; не забывайте об NSAutoreleasePool-е на стороне Objective-C/Cocoa</p>
+<h3>Отладка</h3>
+<p>Не все всегда работает как надо, поетому несколько советов по отладке:</p>
+<ol>
+<li>Для одних и тех же исходников создайте 2 Lazarus проекта &#8211; один как библиотеку, второй как консольное приложение. Из второго запускайте юнит-тесты.</li>
+<li>В Lazarus есть возможность запускать dylib через hosted application: Run &#8211; Run Parameters&#8230;</li>
+<li>Включите опцию &#8220;Generate GDB information&#8221;, тогда при генерации исключения в библиотеке XCode сможет показать &#8220;красивый&#8221; стек и даже строку исходника, где это произошло.</li>
+<li>Write/Writeln выводит строку на стандартный вывод, который можно посмотреть в XCode в окне All Output</li>
+</ol>
+<h3>Упаковка</h3>
+<div>Есть еще одна хитрая особенность подключения dylib: если делать это описанным мною способом, XCode &#8220;вшивает&#8221; в выходной бинарник абсолютный путь к dylib. Заменить его на относительный можно так (YourApplication &#8211; XCode приложение, libtest &#8211; Lazarus библиотека):</div>
+<div>
+<ol>
+<li>Копируем dylib в YouApplication.app/Contents/MacOS/ (программы .app в MacOSX &#8211; это папки)</li>
+<li>Заходим через консоль в YouApplication.app/Contents/MacOS/ и выполняем:
+<pre>install_name_tool -change /path/to/your/dylib/libtest.dylib @loader_path/libtest.dylib YourApplication</pre>
+</li>
+<li>Проверяем (в выводе команды не должно быть абсолютного пути к libtest.dylib):
+<pre>otool -L  YourApplication</pre>
+</li>
+</ol>
+</div>
+<h3> 64-bit</h3>
+<p>Пока что и библиотека и приложение 32-битные. В ближайшем будущем планирую собрать все под 64битную систему, FPC уже давно поддерживает эту архитектуру.</p>
+<h3> Лирическое отступление №2</h3>
+<p>Почему не Delphi XE for Mac?</p>
+<p>Где-то около полугода назад я присутствовал на представлении XE2 в Киеве, в частности они показывали интеграцию с MacOS. Очень радует, что Embarcadero развивает Delphi и ведет его на новые рынки. Для свого проекта я отказался от XE2 в пользу FreePascal (core) + Cocoa (UI) по нескольким причинам:</p>
+<ul>
+<li>Сырость самого XE2 (наверное основная причина)</li>
+<li>Native UI</li>
+<li>Доступ к Mac-овским платформенным плюшкам напрямую</li>
+<li>Желание познавать новое. Только с переходом на другой ЯП, фреймворк и платформу осознал насколько был до этого &#8220;заточен&#8221; под Delphi</li>
+</ul>
+<p>Хотя, наверное, новый Firemonkey может быть (и будет!) полезен при разработке других видов приложений.</p>
+<p>Кстати, практически одновременно с моей появилась статья &#8211; <a href="http://www.webdelphi.ru/2012/01/delphi-xe2-hello-mac-os/">введение в XE2+Mac</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://delphi.frantic.im/delphi-to-freepascal-on-mac-osx/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>DelphiPlus.org и RSS</title>
+		<link>http://delphi.frantic.im/delphiplus-org-%d0%b8-rss/</link>
+		<comments>http://delphi.frantic.im/delphiplus-org-%d0%b8-rss/#comments</comments>
+		<pubDate>Mon, 20 Dec 2010 18:20:17 +0000</pubDate>
+		<dc:creator>Frantic</dc:creator>
+				<category><![CDATA[Delphi]]></category>
+
+		<guid isPermaLink="false">http://delphi.frantic.im/?p=47</guid>
+		<description><![CDATA[Последнее время сайты delphifeeds.ru/delphifeeds.com совсем не радуют содержимым. Очень много оффтопика. Есть такой замечательный ресурс в Интернете &#8211; http://www.delphiplus.org/, сборник интересных статей и событий в мире Delphi, который обновляется каждый (!!) день. На мой взгляд, единственный его недостаток &#8211; отсутствие RSS для удобного отслеживания обновлений. Автор сообщил мне, что сайт планируется перевести на движок, после [...]]]></description>
+			<content:encoded><![CDATA[<p>Последнее время сайты <a href="http://delphifeeds.ru/">delphifeeds.ru</a>/<a href="http://www.delphifeeds.com/">delphifeeds.com</a> совсем не радуют содержимым. Очень много оффтопика.</p>
+<p>Есть такой замечательный ресурс в Интернете &#8211; <a href="http://www.delphiplus.org/">http://www.delphiplus.org/</a>, сборник интересных статей и событий в мире Delphi, который обновляется каждый (!!) день. На мой взгляд, единственный его недостаток &#8211; отсутствие RSS для удобного отслеживания обновлений. Автор сообщил мне, что сайт планируется перевести на движок, после чего появится масса удобных функций, включая RSS.</p>
+<p>&#8230;А пока можно воспользоваться моим костылем: добавляем в Google Reader (или другой любимый RSS-reader) следующий URL: <strong>http://delphi.frantic.im/delphi_plus.xml</strong></p>
+<p>Как это работает? На сервере Ruby скрипт, который несколько раз в день парсит delphiplus.org и формирует из его контента файл в формате RSS-XML. Предложения приветствуются (в виде комментариев к топику).</p>
+]]></content:encoded>
+			<wfw:commentRss>http://delphi.frantic.im/delphiplus-org-%d0%b8-rss/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>О разбитых окнах</title>
+		<link>http://delphi.frantic.im/%d0%be-%d1%80%d0%b0%d0%b7%d0%b1%d0%b8%d1%82%d1%8b%d1%85-%d0%be%d0%ba%d0%bd%d0%b0%d1%85/</link>
+		<comments>http://delphi.frantic.im/%d0%be-%d1%80%d0%b0%d0%b7%d0%b1%d0%b8%d1%82%d1%8b%d1%85-%d0%be%d0%ba%d0%bd%d0%b0%d1%85/#comments</comments>
+		<pubDate>Mon, 25 Oct 2010 13:20:36 +0000</pubDate>
+		<dc:creator>Frantic</dc:creator>
+				<category><![CDATA[Delphi]]></category>
+
+		<guid isPermaLink="false">http://delphi.frantic.im/?p=43</guid>
+		<description><![CDATA[Суть правила такова: &#8220;Если в здании появилось разбитое окно, вероятность появления следующего очень возрастает&#8221;. Подробнее об этом можно прочитать здесь. Эта теория может применяться в программировании. Действительно, когда в программе появляется первый &#8220;костыль&#8221;, не совсем качественный код, это очень плохо. Возникает желание сделать еще один &#8220;хак&#8221;, ведь это быстрее чем делать &#8220;правильно&#8221;, плюс программа уже содержит [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://delphi.frantic.im/wp-content/uploads/2010/10/broken-window.jpg"><img class="alignleft size-medium wp-image-44" title="broken-window" src="http://delphi.frantic.im/wp-content/uploads/2010/10/broken-window-300x198.jpg" alt="" width="300" height="198" /></a>Суть правила такова: &#8220;Если в здании появилось разбитое окно, вероятность появления следующего очень возрастает&#8221;. Подробнее об этом можно прочитать <a href="http://socioline.ru/node/994">здесь</a>.</p>
+<p>Эта теория может применяться в программировании. Действительно, когда в программе появляется первый &#8220;костыль&#8221;, не совсем качественный код, это очень плохо. Возникает желание сделать еще один &#8220;хак&#8221;, ведь это быстрее чем делать &#8220;правильно&#8221;, плюс программа уже содержит пару костылей: одним больше / одним меньше, какая уже разница&#8230;</p>
+<p>Очевидно, что после некоторого времени код превращается в помойку с кучей разбитого стекла. И глядя на всё это нету никакого желания исправлять ситуацию, т.к. это будет очень сложно; возникает резонная мысль: <strong>&#8220;А не переписать бы всё заново?..&#8221;</strong></p>
+<p>Как не допустить такой ситуации?</p>
+<p><span id="more-43"></span>Очень просто &#8211; не &#8220;разбивать окон&#8221;. Хотя на самом деле это очень сложно. Поделюсь советами, которые помогают мне держать код в приемлемом состоянии:</p>
+<ol>
+<li><strong>Самое главное &#8211; не усложнять</strong>! Особенно простые вещи. Simple is better than complex, but complex is better than complicated.</li>
+<li>Думать перед тем как делать, <strong>но не слишком долго</strong>. Если сразу увидев задание рваться в бой, можно быстро получить работоспособный функционал, но без возможности его развивать в дальнейшем. Если думать слишком долго, заглядывая в будущее и стараясь сделать систему как можно гибче, вероятность &#8220;промахнуться&#8221; колоссально велика. Идеально &#8211; код, который не делает больше, чем от него надо, но который в будущем будет легко рефакторить.</li>
+<li><strong>Разделяй и властвуй</strong>. Код, состоящий из слабо связанных между собой частей с заранее продуманными взаимодействиями намного легче поддерживать. <strong>Разделять интерфейс и реализацию.</strong></li>
+<li>Можно &#8220;закрыть глаза&#8221; на качество реализации конкретного модуля, <strong>если его интерфейс прозрачен</strong>. Пример &#8211; модуль, отвечающий за настройки приложения. Если его интерфейс хорошо продуман, и он ведет себя соответственно ожиданиям, то на некоторое время можно считать его черным ящиком и не заглядывать внутрь.</li>
+<li>Автоматизированное тестирование. Хорошо <strong>покрытый юнит-тестами модуль</strong> будет стоить дороже в плане времени, но в общем итоге сэкономит намного больше. Хорошо иметь юнит-тесты как для интерфейсов (т.е. <strong>что </strong>должен делать модуль с точки зрения остальных модулей) так и для реализаций (т.е. <strong>как </strong>должна себя вести конкретная реализация интерфейса).</li>
+<li>Не боятся часто проводить <strong>рефакторинг</strong>. Программа развивается, появляются новые требования, которых не было заложено в изначальную архитектуру приложения. Ну и что? Это нормально. Надо не лениться и не бояться адекватно изменять скелет приложения.</li>
+<li><strong>Система контроля версий</strong>. Это чудо инженерной мысли хоть и не имеет непосредственного отношения к проблеме, но всё же помогает с ней бороться. Я люблю Git &#8211; там очень легко создать ветку и попробовать что-то поменять, не боясь потерять стабильную версию программы. Если не получилось &#8211; всегда можно откатиться назад.</li>
+</ol>
+]]></content:encoded>
+			<wfw:commentRss>http://delphi.frantic.im/%d0%be-%d1%80%d0%b0%d0%b7%d0%b1%d0%b8%d1%82%d1%8b%d1%85-%d0%be%d0%ba%d0%bd%d0%b0%d1%85/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Баг в BRCC32</title>
+		<link>http://delphi.frantic.im/%d0%b1%d0%b0%d0%b3-%d0%b2-brcc32/</link>
+		<comments>http://delphi.frantic.im/%d0%b1%d0%b0%d0%b3-%d0%b2-brcc32/#comments</comments>
+		<pubDate>Thu, 14 Oct 2010 12:12:19 +0000</pubDate>
+		<dc:creator>Frantic</dc:creator>
+				<category><![CDATA[Delphi]]></category>
+
+		<guid isPermaLink="false">http://delphi.frantic.im/?p=32</guid>
+		<description><![CDATA[BRCC32 - это консольный компилятор ресурсов. Из *.rc файлов он собирает *.res. Судя по версии данная утилита не менялась со времен Inprise. Случайно наткнулся на странную ошибку &#8211; если есть папка, название которой начинается с точки (.), а в ней или в ее подкаталогах есть *.rc файл, brcc32 не сможет его скомпилировать. Никаких сообщений об ошибке, код возврата [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://delphi.frantic.im/wp-content/uploads/2010/10/brcc32-bug-300x171.png"><img class="alignleft size-full wp-image-33" title="brcc32-bug-300x171" src="http://delphi.frantic.im/wp-content/uploads/2010/10/brcc32-bug-300x171.png" alt="" width="300" height="171" /></a><strong> BRCC32 </strong>- это консольный компилятор ресурсов. Из *.rc файлов он собирает *.res. Судя по версии данная утилита не менялась со времен Inprise.</p>
+<p>Случайно наткнулся на странную ошибку &#8211; если есть папка, название которой <strong>начинается с точки</strong> (.), а в ней или в ее подкаталогах есть *.rc файл, <strong>brcc32 не сможет его скомпилировать</strong>. Никаких сообщений об ошибке, код возврата &#8211; 0. Res появляется, но его размер &#8211; 32 байта (читай &#8211; пустой).</p>
+<p>Вот так :)</p>
+]]></content:encoded>
+			<wfw:commentRss>http://delphi.frantic.im/%d0%b1%d0%b0%d0%b3-%d0%b2-brcc32/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Сборка Delphi проектов через MSBuild</title>
+		<link>http://delphi.frantic.im/%d1%81%d0%b1%d0%be%d1%80%d0%ba%d0%b0-delphi-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82%d0%be%d0%b2-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-msbuild/</link>
+		<comments>http://delphi.frantic.im/%d1%81%d0%b1%d0%be%d1%80%d0%ba%d0%b0-delphi-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82%d0%be%d0%b2-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-msbuild/#comments</comments>
+		<pubDate>Thu, 14 Oct 2010 11:35:48 +0000</pubDate>
+		<dc:creator>Frantic</dc:creator>
+				<category><![CDATA[Delphi]]></category>
+
+		<guid isPermaLink="false">http://delphi.frantic.im/?p=25</guid>
+		<description><![CDATA[MSBuild - это консольная утилита от Microsoft, которая входит в состав .NET Framework. В некотором роде она является аналогом Make и предназначена для автоматической сборки проектов. До 2000-х версий Delphi информация о проекте сохранялась в *.dpr и *.cfg файлах. Для сборки проекта можно было воспользоваться консольным компилятором dcc32, передав ему путь к *.dpr. Сейчас Delphi [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://delphi.frantic.im/wp-content/uploads/2010/10/msbuildconsole.png"><img class="alignleft size-medium wp-image-26" title="msbuildconsole" src="http://delphi.frantic.im/wp-content/uploads/2010/10/msbuildconsole-300x252.png" alt="" width="300" height="252" /></a><strong>MSBuild </strong>- это консольная утилита от Microsoft, которая входит в состав .NET Framework. В некотором роде она является аналогом Make и предназначена для автоматической сборки проектов.</p>
+<p>До 2000-х версий Delphi информация о проекте сохранялась в *.dpr и *.cfg файлах. Для сборки проекта можно было воспользоваться консольным компилятором dcc32, передав ему путь к *.dpr.</p>
+<p>Сейчас Delphi &#8220;косит&#8221; под Visual Studio, сохраняя всю важную для сборки проекта информацию в файле *.dproj. Этот файл имеет xml-формат, совместимый с утилитой MSBuild. Т.е. теперь <strong>можно собирать <strong>Delphi-</strong>проект прямо с консоли</strong>, без лишних телодвижений.</p>
+<p>Зачем такое надо и об особенностях сборки dproj утилитой MSBuild и пойдет речь&#8230;</p>
+<p><span id="more-25"></span>Начну с ответа на вопрос &#8220;Зачем?&#8221;:</p>
+<ol>
+<li>Главное преимущество: для сборки проекта <strong>не нужно запускать RAD Studio</strong> (которая загружается не очень быстро).</li>
+<li><strong>Комплексная сборка</strong>: если разработчик работает над коробочным приложением, то кроме компиляции exe-файла еще надо собрать справку, создать программу инсталляции и т.д. Всё это можно сделать одним bat-файлом.</li>
+</ol>
+<p>&#8220;Как?&#8221;. Очень просто. Для этого необходимо создать bat-файл рядом с *.dproj и наполнить его следующим содержимым:</p>
+<pre class="brush:shell">@echo off
+call rsvars.bat
+c:\Windows\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe MyProject.dproj
+pause</pre>
+<p>Ключевым моментом есть вызов файла rsvars.bat. Он находится в  папке &#8220;C:\Program Files\CodeGear\RAD Studio\X.0\bin\&#8221; и устанавливает необходимые переменные окружения. Без него работать не будет :)</p>
+<p>Несколько замечаний:</p>
+<ul>
+<li>Если в папке только один *.dproj файл &#8211; его имя можно не указывать</li>
+<li>Можно установить переменную окружения %Config% в &#8220;Debug&#8221; или &#8220;Release&#8221; &#8211; на выходе получим соответственную версию исполняемых файлов</li>
+<li>По умолчание будет выполнена цель &#8220;Build&#8221;. Можно задать цель явно, добавив параметр командной строки /t:&lt;имя цели&gt; к вызову MSBuild</li>
+<li>Группа проектов *.groupproj тоже имеет MSBuild-совместимый формат, т.е. можно (и нужно!) группу проектов собирать через один групповой проект</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://delphi.frantic.im/%d1%81%d0%b1%d0%be%d1%80%d0%ba%d0%b0-delphi-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82%d0%be%d0%b2-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-msbuild/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Что не так с RAD-way? Часть 1: DFM</title>
+		<link>http://delphi.frantic.im/%d1%87%d1%82%d0%be-%d0%bd%d0%b5-%d1%82%d0%b0%d0%ba-%d1%81-rad-way-1/</link>
+		<comments>http://delphi.frantic.im/%d1%87%d1%82%d0%be-%d0%bd%d0%b5-%d1%82%d0%b0%d0%ba-%d1%81-rad-way-1/#comments</comments>
+		<pubDate>Thu, 14 Oct 2010 10:35:48 +0000</pubDate>
+		<dc:creator>Frantic</dc:creator>
+				<category><![CDATA[Delphi]]></category>
+
+		<guid isPermaLink="false">http://delphi.frantic.im/?p=9</guid>
+		<description><![CDATA[С самого начала в Delphi был сделан уклон на Rapid Application Development &#8211; быструю разработку приложений. Все визуально и красиво: перетаскиваем компоненты, задаем их свойства, пишем обработчики событий&#8230; И простенькое приложение за 15 минут готово! Но, как показала моя практика, это замечательно только в тех случаях, когда размер проекта очень маленький. Если проект серьезный, и [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://delphi.frantic.im/wp-content/uploads/2010/10/1239658060_pic_id101410.jpeg"><img class="size-medium wp-image-16 alignleft" title="1239658060_pic_id101410" src="http://delphi.frantic.im/wp-content/uploads/2010/10/1239658060_pic_id101410-300x225.jpg" alt="" width="300" height="225" /></a></p>
+<p><a href="http://delphi.frantic.im/wp-content/uploads/2010/10/1239658060_pic_id101410.jpeg"></a>С самого начала в Delphi был сделан уклон на<strong> Rapid Application Development</strong> &#8211; быструю разработку приложений. Все визуально и красиво: перетаскиваем компоненты, задаем их свойства, пишем обработчики событий&#8230; И простенькое приложение за 15 минут готово!</p>
+<p>Но, как показала моя практика, это замечательно только в тех случаях, когда размер проекта очень маленький. Если проект серьезный, и на его разработку уходит не 15 минут, а 15 недель или месяцев, все преимущества RAD-way становятся его <strong>недостатками</strong>.</p>
+<p>Начнем с способа хранения информации о графическом интерфейсе форм приложения&#8230;</p>
+<h2><span id="more-9"></span></h2>
+<p>Казалось бы Delphi Form file format (*.dfm) &#8211; гениальное изобретение. Формочку можно редактировать в визуальном режиме, все очень шустро работает (если сравнивать с дизайнерами Java Swing/.NET Winforms/.NET WPF). С dfm можно проделывать разнообразные трюки, например динамически загружать dfm в run-time, тем самым изменяя вид формы (например, для локализации).</p>
+<p>Давайте рассмотрим <strong>проблемы</strong>, которые приносит с собой использование dfm-ок:</p>
+<ul>
+<li><strong>Проблемы с кодировкой</strong>. Если я все правильно путаю, dfm до сих пор хранятся в ANSI кодировке, кириллица кодируется в абракадабру типа #1051#1072#1073#1086#1088. Это очень затрудняет поиск.</li>
+<li><strong>Картинки</strong>, содержимое которых хранится прямо в dfm (каждый байт данных записывается как XX, т.е. очень сильно &#8220;раздувает&#8221; dfm-ку)</li>
+<li>Ошибки в dfm-ках приводят к <strong>&#8220;падению&#8221; RAD Studio</strong>. Не так что бы очень часто, но у меня были случаи, когда RAD Studio или намертво зависала, или выдавала всеми любимые AV или &#8220;Index out of bounds (-1)&#8221;</li>
+<li><strong>Компилятор не показывает ошибок в dfm-ках</strong> (например, отсутствующие или лишние свойства). Увидеть их можно только непосредственно во время работы приложения. И это особенно ужасно, если в проекте очень много форм и используются сторонние компоненты (которые время от времени обновляются, добавляя/удаляя/переименовывая какие-то свои property).</li>
+<li>Проблема по-серьезнее, не связанная напрямую с dfm : очень большое искушение<strong> смешать логику представления и бизнес-логику</strong>. Вся идея Event-Handler&#8217;ов так и подстрекает писать в коде формочек всю логику. В результате получается каша, управлять которой практически невозможно. Если посмотреть как организован Swing, Qt или Ruby on Rails, можно заметить что сам Framework помогает разработчику не &#8220;мешать коней с людьми&#8221;</li>
+<li>И, на мой взгляд, <strong>самая коварная проблема</strong>: работа в команде и система контроля версий. Когда над проектом трудится больше 1го человека, возникает необходимость синхронизировать работу. Умные люди давно уже придумали системы контроля версий. Время от времени приходится &#8220;разруливать&#8221; конфликты. С кодом еще пол-беды, а вот &#8220;разрулить&#8221; конфликт в dfm &#8211; это самое худшее, с чем мне приходилось иметь дело.</li>
+</ul>
+<p>Надеюсь я никого не обидел :)</p>
+<p><strong>Так что же теперь делать?</strong> Отказаться от использования dfm и всего визуального программирования? Я бы на этот вопрос ответил так: &#8220;И да, и нет&#8221;. Если приложение на пару дней разработки &#8211; RAD-way то что нужно. Если же проект обещает быть большим и сложным, а главное его надо будет в дальнейшем <strong>сопровождать </strong>(!), лучше сразу отказаться от искушения использовать визуальный конструктор форм, кроме как для очень небольших, атомарных вещей: формочка &#8220;О программе&#8221;, простенький диалог настроек.</p>
+<p>Приведу <strong>пример</strong>: корпоративное бизнес приложение для работы с БД (скажем 30-50 форм). Если делать каждую форму в дизайнере, программа станет очень инертной, заменить сетку EhLib на DevExpress, или картинку всех кнопочек &#8220;Сохранить&#8221; <strong>будет адом</strong>. При разработке новых форм будет использоваться <strong>копипаст</strong>&#8230; Ну я думаю мысль ясна. Как сделать лучше? Потратить несколько недель на написание своего (не визуального!)  конструктора форм, с такими методами как AddNavigationButtons, AddDBGrid и т.д., который сам будет создавать и размещать контролы. Таким образом то, как будут выглядеть все формы будет определено в одном месте, а не разбросано по куче dfm.</p>
+<p>К этой теме я еще обязательно вернусь.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://delphi.frantic.im/%d1%87%d1%82%d0%be-%d0%bd%d0%b5-%d1%82%d0%b0%d0%ba-%d1%81-rad-way-1/feed/</wfw:commentRss>
+		<slash:comments>28</slash:comments>
+		</item>
+		<item>
+		<title>Intro to Delphi Zen</title>
+		<link>http://delphi.frantic.im/intro-to-delphi-zen/</link>
+		<comments>http://delphi.frantic.im/intro-to-delphi-zen/#comments</comments>
+		<pubDate>Thu, 14 Oct 2010 09:29:35 +0000</pubDate>
+		<dc:creator>Frantic</dc:creator>
+				<category><![CDATA[Без категории]]></category>
+
+		<guid isPermaLink="false">http://delphi.frantic.im/?p=6</guid>
+		<description><![CDATA[Здравствуйте! Начну с рассказа об этом блоге. Ничего оригинального в его появлении нет &#8211; у меня накопилась куча размышлений, которыми я хочу поделиться с сообществом. Касаются они разработки програмного обеспечения в среде CodeGear/Embarcadero RAD Studio. Опыта работы с Delphi &#8211; больше 7 лет. Прошел много этапов в своем развитии &#8211; начиная с школьника, заканчивая тем, [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://delphi.frantic.im/wp-content/uploads/2010/10/zen_garden_mandolux2-best-picture-gallery.jpg"><img class="alignleft size-medium wp-image-14" title="zen_garden_mandolux2-best-picture-gallery" src="http://delphi.frantic.im/wp-content/uploads/2010/10/zen_garden_mandolux2-best-picture-gallery-300x187.jpg" alt="" width="300" height="187" /></a>Здравствуйте! Начну с рассказа об этом блоге. Ничего оригинального в его появлении нет &#8211; у меня накопилась куча размышлений, которыми я хочу поделиться с сообществом. Касаются они разработки програмного обеспечения в среде CodeGear/Embarcadero RAD Studio.</p>
+<p>Опыта работы с Delphi &#8211; больше 7 лет. Прошел много этапов в своем развитии &#8211; начиная с школьника, заканчивая тем, кем я есть сейчас. Никоим образом я не претендую на звание &#8220;гуру&#8221; или &#8220;профи&#8221;, просто буду делиться своим опытом и соображениями.</p>
+<p>Приятного чтения!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://delphi.frantic.im/intro-to-delphi-zen/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

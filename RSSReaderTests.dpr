@@ -21,7 +21,10 @@ uses
   TextTestRunner,
   TestHttpClient in 'test\TestHttpClient.pas',
   TestRSSParser in 'test\TestRSSParser.pas',
-  TestRSSFeedModel in 'test\TestRSSFeedModel.pas';
+  TestRSSFeedModel in 'test\TestRSSFeedModel.pas',
+  HttpClient in 'src\HttpClient.pas',
+  RssModel in 'src\RssModel.pas',
+  RssParser in 'src\RssParser.pas';
 
 {$R *.RES}
 

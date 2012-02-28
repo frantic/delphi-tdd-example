@@ -51,6 +51,7 @@
 			</DCCReference>
 			<DCCReference Include="src\HttpClient.pas"/>
 			<DCCReference Include="src\RssModel.pas"/>
+			<DCCReference Include="src\RssParser.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>

@@ -4,7 +4,8 @@ uses
   Forms,
   Unit1 in 'src\Unit1.pas' {Form1},
   HttpClient in 'src\HttpClient.pas',
-  RssModel in 'src\RssModel.pas';
+  RssModel in 'src\RssModel.pas',
+  RssParser in 'src\RssParser.pas';
 
 {$R *.res}
 
