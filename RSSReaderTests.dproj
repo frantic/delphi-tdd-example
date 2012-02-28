@@ -48,6 +48,7 @@
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
 			<DCCReference Include="test\TestHttpClient.pas"/>
+			<DCCReference Include="test\TestRSSParser.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>

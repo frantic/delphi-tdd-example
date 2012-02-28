@@ -19,7 +19,8 @@ uses
   TestFramework,
   GUITestRunner,
   TextTestRunner,
-  TestHttpClient in 'test\TestHttpClient.pas';
+  TestHttpClient in 'test\TestHttpClient.pas',
+  TestRSSParser in 'test\TestRSSParser.pas';
 
 {$R *.RES}
 
