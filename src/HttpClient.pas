@@ -2,11 +2,17 @@ unit HttpClient;
 
 interface
 
+uses
+  Classes, SysUtils;
+
+type
+  EHttpClientException = class(Exception);
+
 function GetPageByURL(URL: string): string;
 
 implementation
 
-uses IdHTTP, SysUtils, Classes;
+uses IdHTTP;
 
 function GetPageByURL(URL: string): string;
 var
@@ -16,12 +22,17 @@ begin
   HTTP := TIdHTTP.Create;
   Stream := TStringStream.Create;
   try
-    HTTP.Get(URL, Stream);
+    try
+      HTTP.Get(URL, Stream);
+    except
+      on E: Exception do
+        raise EHttpClientException.Create(E.Message);
+    end;
     Result := Stream.DataString;
   finally
     FreeAndNil(HTTP);
     FreeAndNil(Stream);
-  end;
+  end
 end;
 
 end.
