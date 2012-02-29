@@ -3,8 +3,10 @@ unit RssParser;
 interface
 
 uses
-  RssModel;
+  RssModel, SysUtils;
 
+type
+  ERSSParserException = class(Exception);
 
 function ParseRSSDate(DateStr: string): TDateTime;
 function ParseRSSFeed(XML: string): TRSSFeed;
@@ -12,7 +14,7 @@ function ParseRSSFeed(XML: string): TRSSFeed;
 implementation
 
 uses
-  XMLDoc, XMLIntf, Windows, SysUtils;
+  XMLDoc, XMLIntf, Windows;
 
 function FetchNextToken(var s: string; space: string = ' '): string;
 var
@@ -41,23 +43,31 @@ begin
   for M := 1 to 12 do
     if Months[M] = MonthStr then
       Exit(M);
-  raise Exception.CreateFmt('Unknown month: %s', [MonthStr]);
+  raise ERSSParserException.CreateFmt('Unknown month: %s', [MonthStr]);
 end;
 
 function ParseRSSDate(DateStr: string): TDateTime;
 var
   df: TFormatSettings;
+  s: string;
   Day, Month, Year, Hour, Minute, Second: Integer;
 begin
+  s := DateStr;
   // Parsing date in this format: Mon, 06 Sep 2009 16:45:00 +0000
-  FetchNextToken(DateStr);                          // Ignore "Mon, "
-  Day := StrToInt(FetchNextToken(DateStr));         // "06"
-  Month := MonthToInt(FetchNextToken(DateStr));     // "Sep"
-  Year := StrToInt(FetchNextToken(DateStr));        // "2009"
-  Hour := StrToInt(FetchNextToken(DateStr, ':'));   // "16"
-  Minute := StrToInt(FetchNextToken(DateStr, ':')); // "45"
-  Second := StrToInt(FetchNextToken(DateStr));      // "00"
-  Result := EncodeDate(Year, Month, Day) + EncodeTime(Hour, Minute, Second, 0);
+  try
+    FetchNextToken(s);                          // Ignore "Mon, "
+    Day := StrToInt(FetchNextToken(s));         // "06"
+    Month := MonthToInt(FetchNextToken(s));     // "Sep"
+    Year := StrToInt(FetchNextToken(s));        // "2009"
+    Hour := StrToInt(FetchNextToken(s, ':'));   // "16"
+    Minute := StrToInt(FetchNextToken(s, ':')); // "45"
+    Second := StrToInt(FetchNextToken(s));      // "00"
+    Result := EncodeDate(Year, Month, Day) + EncodeTime(Hour, Minute, Second, 0);
+  except
+    on E: Exception do
+      raise ERSSParserException.CreateFmt('Can''t parse date "%s": %s',
+        [DateStr, E.Message]);
+  end;
 end;
 
 function ParseRSSFeed(XML: string): TRSSFeed;
@@ -66,38 +76,49 @@ var
   ChannelNode, Node: IXMLNode;
   RssItem: TRSSItem;
 begin
-  Doc := LoadXMLData(XML);
-  Doc.Active := True;
-  ChannelNode := Doc.DocumentElement.ChildNodes.First;
+  Result := nil;
+  try
+    Doc := LoadXMLData(XML);
+    Doc.Active := True;
+    ChannelNode := Doc.DocumentElement.ChildNodes.First;
 
-  Result := TRSSFeed.Create;
+    Result := TRSSFeed.Create;
 
-  Node := ChannelNode.ChildNodes.First;
-  while Node <> nil do
-  begin
-    // Some feeds have atom:link element and other similar. We are only looking
-    // for elements without namespace
-    if Node.NamespaceURI = '' then
+    Node := ChannelNode.ChildNodes.First;
+    while Node <> nil do
     begin
-      if Node.NodeName = 'title' then
-        Result.Title := Node.Text
-      else
-      if Node.NodeName = 'link' then
-        Result.Link := Node.Text
-      else
-      if Node.NodeName = 'description' then
-        Result.Description := Node.Text
-      else
-      if Node.NodeName = 'item' then
+      // Some feeds have atom:link element and other similar. We are only looking
+      // for elements without namespace
+      if Node.NamespaceURI = '' then
       begin
-        RssItem := Result.AddItem;
-        RssItem.Title := Node.ChildNodes['title'].Text;
-        RssItem.Link := Node.ChildNodes['link'].Text;
-        RssItem.Description := Node.ChildNodes['description'].Text;
-        RssItem.PubDate := ParseRSSDate(Node.ChildNodes['pubDate'].Text);
+        if Node.NodeName = 'title' then
+          Result.Title := Node.Text
+        else
+        if Node.NodeName = 'link' then
+          Result.Link := Node.Text
+        else
+        if Node.NodeName = 'description' then
+          Result.Description := Node.Text
+        else
+        if Node.NodeName = 'item' then
+        begin
+          RssItem := Result.AddItem;
+          RssItem.Title := Node.ChildNodes['title'].Text;
+          RssItem.Link := Node.ChildNodes['link'].Text;
+          RssItem.Description := Node.ChildNodes['description'].Text;
+          RssItem.PubDate := ParseRSSDate(Node.ChildNodes['pubDate'].Text);
+        end;
       end;
+      Node := Node.NextSibling;
     end;
-    Node := Node.NextSibling;
+  except
+    on E: Exception do
+    begin
+      if Result <> nil then
+        Result.Free;
+      raise ERSSParserException.CreateFmt('Failed to parse RSS: %s',
+        [E.Message]);
+    end;
   end;
 end;
 
