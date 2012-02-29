@@ -30,7 +30,11 @@ uses
   TestSyncManager in 'test\TestSyncManager.pas',
   SyncManager in 'src\SyncManager.pas',
   RssStorage in 'src\RssStorage.pas',
-  UINotification in 'src\UINotification.pas';
+  UINotification in 'src\UINotification.pas',
+  FakeHttpClient in 'test\FakeHttpClient.pas',
+  FakeRSSParser in 'test\FakeRSSParser.pas',
+  FakeRSSStorage in 'test\FakeRSSStorage.pas',
+  FakeUINotification in 'test\FakeUINotification.pas';
 
 {$R *.RES}
 

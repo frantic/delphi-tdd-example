@@ -59,6 +59,10 @@
 			<DCCReference Include="src\SyncManager.pas"/>
 			<DCCReference Include="src\RssStorage.pas"/>
 			<DCCReference Include="src\UINotification.pas"/>
+			<DCCReference Include="test\FakeHttpClient.pas"/>
+			<DCCReference Include="test\FakeRSSParser.pas"/>
+			<DCCReference Include="test\FakeRSSStorage.pas"/>
+			<DCCReference Include="test\FakeUINotification.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
