@@ -5,7 +5,8 @@ uses
   Unit1 in 'src\Unit1.pas' {Form1},
   HttpClient in 'src\HttpClient.pas',
   RssModel in 'src\RssModel.pas',
-  RssParser in 'src\RssParser.pas';
+  RssParser in 'src\RssParser.pas',
+  IndyHttpClient in 'src\IndyHttpClient.pas';
 
 {$R *.res}
 

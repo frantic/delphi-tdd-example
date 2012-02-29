@@ -3,36 +3,19 @@ unit HttpClient;
 interface
 
 uses
-  Classes, SysUtils;
+  SysUtils;
 
 type
   EHttpClientException = class(Exception);
 
-function GetPageByURL(URL: string): string;
+  IHttpClient = interface
+    ['{CDE443FE-8249-4557-8F26-D0EC6432F274}']
+    function GetPageByURL(URL: string): string;
+  end;
+
+var
+  DefaultHttpClient: IHttpClient;
 
 implementation
-
-uses IdHTTP;
-
-function GetPageByURL(URL: string): string;
-var
-  HTTP: TIdHTTP;
-  Stream: TStringStream;
-begin
-  HTTP := TIdHTTP.Create;
-  Stream := TStringStream.Create;
-  try
-    try
-      HTTP.Get(URL, Stream);
-    except
-      on E: Exception do
-        raise EHttpClientException.Create(E.Message);
-    end;
-    Result := Stream.DataString;
-  finally
-    FreeAndNil(HTTP);
-    FreeAndNil(Stream);
-  end
-end;
 
 end.

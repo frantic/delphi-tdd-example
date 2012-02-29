@@ -24,7 +24,8 @@ uses
   TestRSSFeedModel in 'test\TestRSSFeedModel.pas',
   HttpClient in 'src\HttpClient.pas',
   RssModel in 'src\RssModel.pas',
-  RssParser in 'src\RssParser.pas';
+  RssParser in 'src\RssParser.pas',
+  IndyHttpClient in 'src\IndyHttpClient.pas';
 
 {$R *.RES}
 
