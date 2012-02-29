@@ -13,6 +13,9 @@ type
     function ParseRSSFeed(XML: string): TRSSFeed;
   end;
 
+var
+  DefaultRSSParser: IRSSParser = nil;
+
 implementation
 
 end.
