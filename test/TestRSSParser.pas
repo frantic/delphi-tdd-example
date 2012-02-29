@@ -3,14 +3,18 @@ unit TestRSSParser;
 interface
 
 uses
-  TestFramework;
+  TestFramework, RssParser, XmlDocRssParser;
 
 type
   TRSSParserTest = class(TTestCase)
   private
+    FParser: TXmlDocRssParser;
     procedure ParseInvalidDate;
     procedure ParseInvalidXML;
     procedure ParseEmptyXML;
+  protected
+    procedure SetUp; override;
+    procedure TearDown; override;
   published
     procedure ItParsesRSSDate;
     procedure ItRaisesAnExceptionWhenDateCantBeParsed;
@@ -22,7 +26,7 @@ type
 implementation
 
 uses
-  SysUtils, IOUtils,  RssModel, RssParser, StrUtils;
+  SysUtils, IOUtils,  RssModel, StrUtils;
 
 { TRSSParserTest }
 
@@ -30,7 +34,7 @@ procedure TRSSParserTest.ItParsesRSSDate;
 var
   d: TDateTime;
 begin
-  d := ParseRSSDate('Mon, 06 Sep 2009 16:45:00 +0000');
+  d := FParser.ParseRSSDate('Mon, 06 Sep 2009 16:45:00 +0000');
   CheckEquals('2009-09-06 16:45:00', FormatDateTime('yyyy-mm-dd hh:nn:ss', d));
 end;
 
@@ -41,7 +45,7 @@ var
   FirstItem: TRSSItem;
 begin
   FeedContent := IOUtils.TFile.ReadAllText('feed.xml', TEncoding.UTF8);
-  RSSFeed := ParseRSSFeed(FeedContent);
+  RSSFeed := FParser.ParseRSSFeed(FeedContent);
   CheckEquals('Delphi Zen', RSSFeed.Title);
   CheckEquals('http://delphi.frantic.im', RSSFeed.Link);
   CheckEquals('Food for thoughts', RSSFeed.Description);
@@ -72,17 +76,27 @@ end;
 
 procedure TRSSParserTest.ParseEmptyXML;
 begin
-  ParseRSSDate('');
+  FParser.ParseRSSDate('');
 end;
 
 procedure TRSSParserTest.ParseInvalidDate;
 begin
-  ParseRSSDate('2011-01-02 12:34:45');
+  FParser.ParseRSSDate('2011-01-02 12:34:45');
 end;
 
 procedure TRSSParserTest.ParseInvalidXML;
 begin
-  ParseRSSFeed('MALFORMED XML');
+  FParser.ParseRSSFeed('MALFORMED XML');
+end;
+
+procedure TRSSParserTest.SetUp;
+begin
+  FParser := TXmlDocRssParser.Create;
+end;
+
+procedure TRSSParserTest.TearDown;
+begin
+  FreeAndNil(FParser);
 end;
 
 initialization

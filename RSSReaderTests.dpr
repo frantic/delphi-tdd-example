@@ -25,7 +25,8 @@ uses
   HttpClient in 'src\HttpClient.pas',
   RssModel in 'src\RssModel.pas',
   RssParser in 'src\RssParser.pas',
-  IndyHttpClient in 'src\IndyHttpClient.pas';
+  IndyHttpClient in 'src\IndyHttpClient.pas',
+  XmlDocRssParser in 'src\XmlDocRssParser.pas';
 
 {$R *.RES}
 

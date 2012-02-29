@@ -53,6 +53,7 @@
 			<DCCReference Include="src\RssModel.pas"/>
 			<DCCReference Include="src\RssParser.pas"/>
 			<DCCReference Include="src\IndyHttpClient.pas"/>
+			<DCCReference Include="src\XmlDocRssParser.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
