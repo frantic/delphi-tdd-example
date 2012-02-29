@@ -26,7 +26,11 @@ uses
   RssModel in 'src\RssModel.pas',
   RssParser in 'src\RssParser.pas',
   IndyHttpClient in 'src\IndyHttpClient.pas',
-  XmlDocRssParser in 'src\XmlDocRssParser.pas';
+  XmlDocRssParser in 'src\XmlDocRssParser.pas',
+  TestSyncManager in 'test\TestSyncManager.pas',
+  SyncManager in 'src\SyncManager.pas',
+  RssStorage in 'src\RssStorage.pas',
+  UINotification in 'src\UINotification.pas';
 
 {$R *.RES}
 

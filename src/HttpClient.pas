@@ -14,7 +14,7 @@ type
   end;
 
 var
-  DefaultHttpClient: IHttpClient;
+  DefaultHttpClient: IHttpClient = nil;
 
 implementation
 

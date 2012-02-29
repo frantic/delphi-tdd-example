@@ -54,6 +54,9 @@
 			<DCCReference Include="src\RssParser.pas"/>
 			<DCCReference Include="src\IndyHttpClient.pas"/>
 			<DCCReference Include="src\XmlDocRssParser.pas"/>
+			<DCCReference Include="src\SyncManager.pas"/>
+			<DCCReference Include="src\UINotification.pas"/>
+			<DCCReference Include="src\RssStorage.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
