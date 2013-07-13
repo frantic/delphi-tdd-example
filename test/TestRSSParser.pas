@@ -9,9 +9,6 @@ type
   TRSSParserTest = class(TTestCase)
   private
     FParser: TXmlDocRssParser;
-    procedure ParseInvalidDate;
-    procedure ParseInvalidXML;
-    procedure ParseEmptyXML;
   protected
     procedure SetUp; override;
     procedure TearDown; override;
@@ -61,32 +58,20 @@ end;
 
 procedure TRSSParserTest.ItRaisesAnExceptionIfRSSIsEmpty;
 begin
-  CheckException(ParseEmptyXML, ERSSParserException);
+  ExpectedException := ERSSParserException;
+  FParser.ParseRSSDate('');
 end;
 
 procedure TRSSParserTest.ItRaisesAnExceptionIfRSSIsInvalid;
 begin
-  CheckException(ParseInvalidXML, ERSSParserException);
+  ExpectedException := ERSSParserException;
+  FParser.ParseRSSFeed('MALFORMED XML');
 end;
 
 procedure TRSSParserTest.ItRaisesAnExceptionWhenDateCantBeParsed;
 begin
-  CheckException(ParseInvalidDate, ERSSParserException);
-end;
-
-procedure TRSSParserTest.ParseEmptyXML;
-begin
-  FParser.ParseRSSDate('');
-end;
-
-procedure TRSSParserTest.ParseInvalidDate;
-begin
+  ExpectedException := ERSSParserException;
   FParser.ParseRSSDate('2011-01-02 12:34:45');
-end;
-
-procedure TRSSParserTest.ParseInvalidXML;
-begin
-  FParser.ParseRSSFeed('MALFORMED XML');
 end;
 
 procedure TRSSParserTest.SetUp;

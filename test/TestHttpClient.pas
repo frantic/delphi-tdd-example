@@ -7,9 +7,6 @@ uses
 
 type
   THttpClientTest = class(TTestCase)
-  private
-    procedure RequestDeadServer;
-    procedure Request404Page;
   protected
     procedure SetUp; override;
     procedure TearDown; override;
@@ -34,22 +31,14 @@ end;
 
 procedure THttpClientTest.ItRaisesAnExceptionWhenServerIsDown;
 begin
-  CheckException(RequestDeadServer, EHttpClientException);
+  ExpectedException := EHttpClientException;
+  DefaultHttpClient.GetPageByURL('http://127.0.0.1:9919/');
 end;
 
 procedure THttpClientTest.ItRaisesAnExceptionWhenServerReturnsError;
 begin
-  CheckException(Request404Page, EHttpClientException);
-end;
-
-procedure THttpClientTest.Request404Page;
-begin
+  ExpectedException := EHttpClientException;
   DefaultHttpClient.GetPageByURL('http://delphi.frantic.im/404');
-end;
-
-procedure THttpClientTest.RequestDeadServer;
-begin
-  DefaultHttpClient.GetPageByURL('http://127.0.0.1:9919/');
 end;
 
 procedure THttpClientTest.SetUp;
