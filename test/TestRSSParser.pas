@@ -37,11 +37,12 @@ end;
 
 procedure TRSSParserTest.ItParsesRSSFeed;
 var
-  FeedContent: string;
+  TestFileName, FeedContent: string;
   RSSFeed: TRSSFeed;
   FirstItem: TRSSItem;
 begin
-  FeedContent := IOUtils.TFile.ReadAllText('feed.xml', TEncoding.UTF8);
+  TestFileName := ExtractFilePath(ParamStr(0)) + 'feed.xml';
+  FeedContent := IOUtils.TFile.ReadAllText(TestFileName, TEncoding.UTF8);
   RSSFeed := FParser.ParseRSSFeed(FeedContent);
   CheckEquals('Delphi Zen', RSSFeed.Title);
   CheckEquals('http://delphi.frantic.im', RSSFeed.Link);
